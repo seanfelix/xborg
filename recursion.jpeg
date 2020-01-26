@@ -1,0 +1,66 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package recursion;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Admin
+ */
+public class Recursion {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        /*
+        Print_sea();
+        Print_seaname23("sean felix" , 18);
+        int sea=MultiByTwo(8);
+        */
+        
+        
+        
+        System.out.print("Search the factorial of the Number: ");
+        int B=input.nextInt();
+        
+        /*
+        System.out.println(sea);
+        System.out.println(Add(3, 6));
+        */        
+        System.out.println(" ");
+        System.out.println("The factorial of number "+ B +" is "+factorial(B));
+    }
+    /*
+    static void Print_sea(){
+        System.out.println("sean cute!!");
+        System.out.println("sean cute!!");
+    }
+    
+    static void Print_seaname(String Name,int age){
+        System.out.println(Name + " Age: " +age);
+        System.out.println(Name + " Age: " +age);
+    }
+    
+    static int MultiByTwo(int input){
+        return input*2;
+    }
+    
+    static int Add(int Num1,int Num2){
+        return Num1+Num2;
+    }
+    */
+    
+    static int factorial(int n){    
+  if (n == 0)    
+    return 1;    
+  else    
+    return(n * factorial(n-1));    
+ }
+    
+} 
