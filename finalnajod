@@ -1,0 +1,70 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication2;
+
+import java.util.Random;
+import java.util.Scanner;
+
+/**
+ *
+ * @author PRJ-FELIX
+ */
+public class JavaApplication2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("welcome to the game of luck ");
+        System.out.println("get a chance to win alot of prizes!!");
+        System.out.println("if you want to try youy luck pls press 1 and any number if you want to leave it all behind");
+
+        int a = input.nextInt();
+            
+        if (a == 1) {
+            Random slotmachine123 = new Random();
+            int num = slotmachine123.nextInt(10) + 1;
+            
+            System.out.println("the number you draw is " + num);
+     
+           if(num==2){
+          System.out.println("you won a brand new car!!!!!!!! ");
+          System.out.println("congratulations!!!!!!!! ");     
+           } 
+           
+           else if (num ==4) {
+          System.out.println("you won a house and lot!!!!!!!! ");
+          System.out.println("congratulations!!!!!!!! ");
+           }
+           
+           else if (num ==6) {
+          System.out.println("you won a playstation 4!!!!!!!! ");
+          System.out.println("congratulations!!!!!!!! ");
+            }
+            
+           else if (num ==8) {
+          System.out.println("you won a trip to canada for 3 days!!!!!!!! ");
+          System.out.println("congratulations!!!!!!!! ");
+            }
+            
+            
+         else{
+           System.out.println("Sorry you didnt win cuz you are not lucky enough"); 
+           System.out.println("Try again next time, GOODLUCK.....");  
+            } 
+        }
+        
+        else if(a!=1){
+           System.out.println("you just back down from the challenge you coward"); 
+           System.out.println("GO HOME AND GO TO SLEEP"); 
+        }
+        
+        
+    }
+
+}
