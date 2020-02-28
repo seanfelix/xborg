@@ -1,0 +1,75 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package finale;
+
+import java.util.Random;
+import java.util.Scanner;
+
+/**
+ *
+ * @author SeansoGwapo
+ */
+public class Finale {
+
+    private static int b;
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("welcome to the game u wanna be ");
+        System.out.println("get a chance to win alot of prizes!!");
+        System.out.println("if you want to try youy luck pls press 1 and 2 if you want to leave it all behind");
+
+        int a = input.nextInt();
+
+        if (a == 1) {
+            Random slotmachine123 = new Random();
+            int num = slotmachine123.nextInt(3) + 1;
+
+            System.out.println("the number you draw is " + num);
+
+            if (num == 23) {
+                System.out.println("you won a brand new car!!!!!!!! ");
+                System.out.println("congratulations!!!!!!!! ");
+
+            }
+            if (num == 50) {
+                System.out.println("you won a house and lot!!!!!!!! ");
+                System.out.println("congratulations!!!!!!!! ");
+            }
+
+            if (num == 75) {
+                System.out.println("you won a playstation 4!!!!!!!! ");
+                System.out.println("congratulations!!!!!!!! ");
+            }
+
+            if (num == 99) {
+                System.out.println("you won a trip to canada for 3 days!!!!!!!! ");
+                System.out.println("congratulations!!!!!!!! ");
+            } else if (num != 23) {
+                System.out.println("sorry you are not lucky for today, better luck next time");
+            } else if (num != 50) {
+                System.out.println("sorry you are not lucky for today, better luck next time");
+            } else if (num != 75) {
+                System.out.println("sorry you are not lucky for today, better luck next time");
+            } else if (num != 99) {
+                System.out.println("sorry you are not lucky for today, better luck next time");
+            }
+
+        }
+
+        if (a == 2) {
+            System.out.println("so you dont wanna try your luck?? ");
+            System.out.println("its okay, HAVE A GOOD DAY!!!!");
+        }
+
+    }
+
+}
